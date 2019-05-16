@@ -18,7 +18,7 @@ $open = ["login", "login_submit"];
 if(!in_array($page, $open) && empty($_SESSION["user"])) $page = "login";
 
 // load global variables
-$title = "DJ's Blog";
+$title = "Wild Adventures";
 
 // connect to the database
 include "classes/Database.php";

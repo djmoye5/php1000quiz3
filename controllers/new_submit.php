@@ -16,5 +16,5 @@ $db->query("
 	INSERT INTO pictures (title, picture, userid) 
 	VALUES ('$title', '$filename', '$userid')");
 
-// redirect to list
-header("Location: ?p=list");
+// redirect to blog
+header("Location: ?p=blog");

@@ -19,16 +19,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `launchygram`
+-- Database: `blog`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pictures`
+-- Table structure for table `posts`
 --
 
-CREATE TABLE `pictures` (
+CREATE TABLE `posts` (
   `id` int(11) NOT NULL,
   `title` varchar(30) NOT NULL,
   `picture` varchar(36) NOT NULL,
@@ -38,10 +38,10 @@ CREATE TABLE `pictures` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `pictures`
+-- Dumping data for table `posts`
 --
 
-INSERT INTO `pictures` (`id`, `title`, `text`, `picture`, `userid`, `inserted`) VALUES
+INSERT INTO `posts` (`id`, `title`, `text`, `picture`, `userid`, `inserted`) VALUES
 (1, 'Whale', 'A magnificent whale!!!', 'wale.jpg', 1, '2019-05-14 01:44:25'),
 (2, 'Antelope', 'A vigilant antelope!!', 'antolipe.jpg', 1, '2019-05-14 01:44:25'),
 (3, 'Elephant', 'A majestic elephant!!!', 'elephant.jpg', 1, '2019-05-14 01:44:25'),
@@ -76,9 +76,9 @@ INSERT INTO `users` (`id`, `username`, `password`) VALUES
 --
 
 --
--- Indexes for table `pictures`
+-- Indexes for table `posts`
 --
-ALTER TABLE `pictures`
+ALTER TABLE `posts`
   ADD PRIMARY KEY (`id`),
   ADD KEY `userid` (`userid`);
 
@@ -93,9 +93,9 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `pictures`
+-- AUTO_INCREMENT for table `posts`
 --
-ALTER TABLE `pictures`
+ALTER TABLE `posts`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --

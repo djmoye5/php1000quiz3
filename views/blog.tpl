@@ -2,7 +2,7 @@
 
 <div class="row">
 	<div class="col-sm">
-		<h1>Images for @<?= $user ?></h1>
+		<h1><?= $user ?>'s Posts</h1>
 	</div>
 </div>
 <div class="row">
@@ -12,11 +12,8 @@
 				<img src="images/<?= $img->pic ?>" class="card-img-top" alt="<?= $img->title ?>">
 				<div class="card-body">
 					<h5 class="card-title">@<?= $img->user ?></h5>
-					<p class="card-text"><?= $img->title ?></p>
-				</div>
-				<div class="card-body">
-					<a href="?p=like_submit&id=<?= $img->id ?>&action=likes" class="card-link"><?= $img->likes ?> Like</a>
-					<a href="?p=like_submit&id=<?= $img->id ?>&action=dislikes" class="card-link"><?= $img->dislikes ?> Dislike</a>
+					<a href="?p=post&id=<?= $img->id ?>"><?= $img->title ?></a><br/>
+					<a class="btn btn-primary btn-sm" href="?p=delete_submit&id=<?= $img->id ?>">Delete</a>
 				</div>
 			</div>
 		</div>
